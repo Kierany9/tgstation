@@ -96,6 +96,6 @@
 
 /datum/powernet/proc/get_electrocute_damage()
 	if(avail >= 1000)
-		return CLAMP(round(avail/20000), 10, 195) + rand(-5,5)
+		return CLAMP(30 + round(avail/25000), 30, 105) + rand(-5,5)
 	else
 		return 0
